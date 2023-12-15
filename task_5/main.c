@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
         fputc(ch, fto);
     }
 
-    if (fclose(ffrom) == EOF || fclose(fto)) {
+    if (fclose(ffrom) == EOF || fclose(fto) == EOF) {
         printf("Error when closing file\n");
         return 1;
     }
